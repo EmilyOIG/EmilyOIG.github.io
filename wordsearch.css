@@ -101,6 +101,7 @@ a.projects:hover, a.projects:hover ~ a.projects{
     color: black;
 }
 
+/* make the menu appear when the label has been clicked*/
 .menu nav{
     -webkit-opacity: 0;
     -moz-opacity: 0;
@@ -193,16 +194,15 @@ a.projects:hover, a.projects:hover ~ a.projects{
     margin-right: -100px;
 }
 
-.menu.green label,
-.menu.green nav ul li a ul li i{
+.menu label,
+.menu nav ul li a ul li i{
     margin: 0px;
-    
-    background-color: white;
+    /*background-color: white;*/
     color: black;
     border: 0.5px solid black;
 }
 
-.menu.green nav ul li a span{
+.menu nav ul li a span{
     margin: 0px;
     margin-left: -1px;
     background-color:white;

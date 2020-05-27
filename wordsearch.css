@@ -210,7 +210,7 @@ a.projects:hover, a.projects:hover ~ a.projects{
     border: 0.5px solid black;
 }
 
-.menu.green nav ul li a span:hover{
+.menu nav ul li a span:hover{
     font-weight: bold;    
     border: 0.5px solid black;
 }

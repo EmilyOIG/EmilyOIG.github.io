@@ -13,14 +13,19 @@ border: 2px solid black;
     src: url(JustSignature-92w7.ttf);
 }
 
+@font-face {
+    font-family: rawkbrush;
+    src: url(Rawkbrush-ywLym.otf);
+}
+
 header {
-    padding: 50px;
+    padding: 10px;
     text-align: center;
 }
 
 h1 {
-    font-family: Signature;
-    font-size: 2em;
+    font-family: rawkbrush;
+    font-size: 4em;
     font-weight: lighter;
 }
 

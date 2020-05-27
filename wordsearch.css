@@ -1,0 +1,234 @@
+body {
+margin: 2%;
+padding: 2%;
+height: 100%; 
+color: black;
+background:white;
+font-family: 'Courier New', Courier, monospace;
+border: 2px solid black;
+}
+
+@font-face {
+    font-family: Signature;
+    src: url(JustSignature-92w7.ttf);
+}
+
+header {
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-family: Signature;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+header a{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+#line {
+    margin: auto;
+    text-align: centre; 
+    width: 30%;
+    height: 2px;
+    background-color: black;
+    animation-name: line_grow;
+    animation-duration: 4s;
+}
+
+@keyframes line_grow {
+    from {width: 0;}
+    to {width: 30%;}
+  }
+
+/*---------------------------------
+         Wordsearch Nav
+---------------------------------*/
+
+#content{
+    margin: auto;
+    width: 45%;
+    height: 92%;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+#content a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#wordsearch {
+    text-align: center;
+    font-size: 2em;
+}
+
+a.home:hover, a.home:hover ~ a.home{
+    background-color: pink;
+    border-radius: 100%;
+}
+
+a.about:hover, a.about:hover ~ a.about{
+    background-color: powderblue;
+    border-radius: 100%;
+}
+
+a.contact:hover, a.contact:hover ~ a.contact{
+    background-color: rgb(246, 248, 150);
+    border-radius: 100%;
+}
+
+a.projects:hover, a.projects:hover ~ a.projects{
+    background-color: rgb(206, 247, 173);
+    border-radius: 100%;
+}
+
+/*-----------------------------
+------ Nav menu 
+------------------------------*/
+
+
+.menu{
+    position: absolute;
+    z-index: 9999;
+    margin:0px;
+    padding: 0px;
+    color: black;
+}
+
+.menu nav{
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;    
+}
+
+.menu input#slide:checked ~ nav{
+    -moz-opacity: 1;
+    -webkit-opacity: 1;
+    opacity: 1;    
+}
+
+.menu label{
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.menu input#slide{
+    display: none;
+}
+
+.menu input#slide:checked ~ label.open i{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.menu label i,
+.menu nav,
+.menu nav ul li a span{
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu label,
+.menu nav ul li a i,
+.menu nav ul li a span{
+    line-height:45px;
+    text-align:center;
+    width:40px;
+    height:40px;
+}
+
+#outer {    
+    margin-left: 40px;
+}
+
+.menu nav ul{
+    padding:0;
+    margin:0;    
+    border:0;
+    list-style:none;
+    overflow: hidden;
+}
+
+.menu nav ul li a i{
+    font-size: 20px;
+}
+
+.menu nav ul li a span{
+    font-size: 15px;
+    text-transform: lowercase;
+    font-weight: lighter;
+    width:0px;
+}
+
+.menu nav ul li a:hover span{
+    width:100px;
+    padding:0px;
+}
+
+.menu.horizontal nav ul li,
+.menu.horizontal nav ul li a span{
+    float: left;
+}
+
+.menu.left.horizontal nav{
+    margin: 0px;
+}
+
+.menu.left.horizontal input#slide:checked ~ nav{
+    margin: 0px;
+}
+
+
+.menu.right.horizontal nav{
+    margin-right: -100px;
+}
+
+.menu.green label,
+.menu.green nav ul li a ul li i{
+    margin: 0px;
+    
+    background-color: white;
+    color: black;
+    border: 0.5px solid black;
+}
+
+.menu.green nav ul li a span{
+    margin: 0px;
+    margin-left: -1px;
+    background-color:white;
+    color: black;
+    border: 0.5px solid black;
+}
+
+.menu.green nav ul li a span:hover{
+    font-weight: bold;    
+    border: 0.5px solid black;
+}
+
+#home_nav:hover{
+    background-color: pink;
+}
+
+#about_nav:hover{
+    background-color: powderblue;
+}
+
+#projects_nav:hover{
+    background-color: rgb(246, 248, 150);
+}
+
+#contact_nav:hover {
+    background-color: rgb(206, 247, 173);
+}
+
+

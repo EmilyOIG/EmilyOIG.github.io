@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Gaughan</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="wordsearch.css"/>
+    <script type="text/javascript" src="wordsearch.js"></script>
+</head>
+
+<body onload="loadWordsearch()">
+
+    <div class="menu top left horizontal green">
+        <input id="slide" name="slide" type="checkbox">
+        <label for="slide" class="icon open">
+            <i class="fa fa-bars"></i>
+        </label>
+            
+        <nav clas="navigation">
+            <ul id = outer>
+                    
+                <li class="active" id="home_nav" >
+                    <a href="index.html">
+                    <ul>
+                        <li><i class="fa fa-home" ></i></li>
+                        <li><span class="shapez" >Home</span></li>
+                    </ul>
+                    </a></li>
+                </li>
+                
+                <li class="active" id="about_nav">
+                    <a href="about.html">
+                    <ul>
+                        <li><i class="fa fa-user"></i></li>
+                        <li><span class="shapez">About Me</span></li>
+                    </ul>
+                    </a></li>
+                </li>
+                
+                <li class="active" id="projects_nav">
+                    <a href="projects.html">
+                    <ul>
+                        <li><i class="fa fa-pencil"></i></li>
+                        <li><span class="shapez">Projects</span></li>
+                    </ul>
+                    </a></li>
+                </li>
+
+                <li class="active" id="contact_nav">
+                    <a href="contact.html" >
+                    <ul>
+                        <li><i class="fa fa-envelope"></i></li>
+                        <li><span class="shapez">Contact</span></li>
+                    </ul>
+                    </a></li>
+                </li>
+            </ul>
+        </nav>
+            
+    </div>
+    <header>
+            <a href = "index.html"><h1>Emily Gaughan</h1></a>
+            <div id="line"></div>
+    </header>
+    <div id='content'>
+        <div id ='navi'></div>
+        <div id='wordsearch'></div>
+    </div>        
+</body>
+
+</html>

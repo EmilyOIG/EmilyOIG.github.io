@@ -88,7 +88,7 @@ a.contact:hover, a.contact:hover ~ a.contact{
     border-radius: 100%;
 }
 
-a.projects:hover, a.projects:hover ~ a.projects{
+a.more:hover, a.more:hover ~ a.more{
     background-color: rgb(206, 247, 173);
     border-radius: 100%;
 }
@@ -228,7 +228,7 @@ a.projects:hover, a.projects:hover ~ a.projects{
     background-color: powderblue;
 }
 
-#projects_nav:hover{
+#more_nav:hover{
     background-color: rgb(246, 248, 150);
 }
 

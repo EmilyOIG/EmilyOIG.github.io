@@ -5,7 +5,7 @@ function loadWordsearch(){
             
 // A function to create and fill a wordsearch
 function initializeWordsearch(dimension){
-    var WORDS = ["home", "about", "projects", "contact"];
+    var WORDS = ["home", "about", "more", "contact"];
     var word_locations = {};
     wordsearch = createWordsearch(dimension);
     for(var i = 0; i <  4; i++){
